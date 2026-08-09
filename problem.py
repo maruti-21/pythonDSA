@@ -1,16 +1,32 @@
-# for i in range(0, 11):
-#     print(i*2)
+#find the second largest element
+list=[7123456789876543212345678909876543,4234567899876543,1,612345678,5987654]
+list.sort()
+print(list)
+print(list[-2])
 
-# for i in range(1, 11):
-#     print(i*3)
+i=1
+while i<=5:
+    print("hello moto")
+    i=i+1
     
-# for i in range(1, 11):
-#     print(i*4)
-    
-# for i in range(1, 11):
-#     print(i*5)
+username=""
+password=""
+while username!="admin" or password!="admin":
+    username=input("enter your name:")
+    password=input("enter your password:")
 
-for i in range(1, 11):
-    print("{:>3} {:>3} {:>3} {:>3} {:>3} {:>3} {:>3} {:>3} {:>3}".format(i*2, i*3, i*4, i*5, i*6, i*7, i*8, i*9, i*10))
+name="programming"
+volwels=['a','e','i','o','u']
+cons=0
+vol=0
+for i in name:
+    if i in volwels:
+        vol=+1
+    else:
+        cons+=1
+print(cons)
+
+
+
     
     

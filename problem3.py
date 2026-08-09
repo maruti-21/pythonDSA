@@ -1,21 +1,19 @@
-# name = "racear"
-# for i in name:
-#     print(i)
-# Check if there are duplicates
-# iflen(name) != len(set(name)):
-#     # Remove duplicates while preserving order
-#     unique_name = ''.join(dict.fromkeys(name))
-#     print(f"Duplicates removed: {unique_name}")
-# else:
-#     print("No duplicates found.")
+list=[1,2,2,3,4,2]
+print(list)
+n=int(input("enter your element"))
+for i in list:
+    if  i==n:
+        list.remove(i)
+print(list)
 
 
+def cal():
+    n1 = int(input("enter your value:"))
+    n2 = int(input("enter your value:"))
+    n3 = int(input("enter your value:"))
+    n4 = int(input("enter you valule:"))
+    result = n1 * n2 * n3 * n4
+    return result
 
-name="racear "
-newname=" "
-for i in name:
-    if i not in newname:
-        newname+=i
-print(newname)
-print(len(name))
-print(name)
+print(cal())
+    
