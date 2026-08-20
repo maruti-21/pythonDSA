@@ -1,32 +1,26 @@
-#find the second largest element
-list=[7123456789876543212345678909876543,4234567899876543,1,612345678,5987654]
-list.sort()
+    # WAP to reverse the order of elements in a list
+
+list = [1, 2, 3, 4, 5]
+new = []
+for i in list:
+    new.insert(0, i)
+
+print("Original list:", list)
+print("Reversed list:", new) 
+
+# WAP fuction to check palindrome
+
+list=[1,2,3,2,1]
 print(list)
-print(list[-2])
-
-i=1
-while i<=5:
-    print("hello moto")
-    i=i+1
+print(list[::-1])
+if list == list[::-1]:
+    print("it is palindrome")
+else:
+    print("it is not palindrome")
     
-username=""
-password=""
-while username!="admin" or password!="admin":
-    username=input("enter your name:")
-    password=input("enter your password:")
+# WAP to call common value in list
 
-name="programming"
-volwels=['a','e','i','o','u']
-cons=0
-vol=0
-for i in name:
-    if i in volwels:
-        vol=+1
-    else:
-        cons+=1
-print(cons)
-
-
-
-    
-    
+list=[1,2,3,4]
+new=[3,4,5,6]
+common = [x for x in list if x in new]
+print("Common values:", common)
