@@ -1,4 +1,6 @@
-name=  "racear "
-# index=0123456
-for i in name:
-    print(i)
+# wap to reverse a string
+str="hello moto"
+
+for i in str.split():
+    
+    print(i[::-1],end=" ")
