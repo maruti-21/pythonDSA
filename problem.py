@@ -1,26 +1,8 @@
-    # WAP to reverse the order of elements in a list
+def remove_leading_zeros(arr):
+    i = 0
+    while i < len(arr) and arr[i] == 0:
+        i += 1
+    return arr[i:]
 
-list = [1, 2, 3, 4, 5]
-new = []
-for i in list:
-    new.insert(0, i)
-
-print("Original list:", list)
-print("Reversed list:", new) 
-
-# WAP fuction to check palindrome
-
-list=[1,2,3,2,1]
-print(list)
-print(list[::-1])
-if list == list[::-1]:
-    print("it is palindrome")
-else:
-    print("it is not palindrome")
-    
-# WAP to call common value in list
-
-list=[1,2,3,4]
-new=[3,4,5,6]
-common = [x for x in list if x in new]
-print("Common values:", common)
+nums = [0, 0, 0, 3, 0, 4, 5]
+print(remove_leading_zeros(nums))
